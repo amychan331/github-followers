@@ -38,12 +38,7 @@ input[type=submit]:active, button[type=button]:active,{
 }
 
 .error {
-  border: 3px solid #e9e9ea;
-  border-radius: 4px;
-  display: inline-block;
   color: red;
   font-style: italic;
-  margin: 6%;
-  padding: 3%;
-  width: auto;
+  margin-bottom: 2%;
 }

@@ -2,11 +2,7 @@ import React from 'react';
 import './Account.css';
 
 const Account = (props) => {
-  if (props.noUser) {
-    return (
-      <section className="error">User does not exist</ section>
-    );
-  } else if (props.githubHandle) {
+  if (props.githubHandle) {
     return (
       <section id="account">
         <img src={`${props.avatar}&s=100`} alt={props.githubHandle} />

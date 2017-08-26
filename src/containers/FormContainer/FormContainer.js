@@ -12,7 +12,6 @@ class FormContainer extends Component {
       githubHandle: '',
       link: '',
       followersCount: 0,
-      noUser: false,
       error: '',
     };
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -20,6 +19,11 @@ class FormContainer extends Component {
   }
 
   handleChange(e) {
+    if (e.target.value === "") {
+      this.setState({ error: "Hmm... something is missing." });
+    } else {
+      this.setState({ error: "" });
+    }
     this.setState({value: e.target.value});
   }
 
@@ -32,14 +36,19 @@ class FormContainer extends Component {
       }
     })
     .then(res => res.json())
-    .then(json => this.setState({
-        githubHandle:this.state.value,
-        link: json.html_url,
-        avatar: json.avatar_url,
-        followersCount: json.followers,
-        noUser: json.message,
-      }))
-    .catch(err => this.setState({error: err}));
+    .then(json => {
+      if (json.message) {
+        this.setState({ error: "User does not exist" });
+      } else {
+        this.setState({
+          githubHandle:this.state.value,
+          link: json.html_url,
+          avatar: json.avatar_url,
+          followersCount: json.followers,
+        })
+      }
+    })
+    .catch(err => this.setState({ error: "The search is not loading properly. Please try again." }));
   }
 
   render() {
@@ -49,17 +58,15 @@ class FormContainer extends Component {
         <Form
           value={this.state.value}
           handleChange={this.handleChange}
-          handleSubmit={this.handleSubmit}/>
+          handleSubmit={this.handleSubmit} />
         { this.state.error ?
-          (<div className="error">The search is not loading properly. Please try again.</div>) :
-          null
+          (<div className="error">{this.state.error}</div>) :
+          <Account
+            githubHandle={this.state.githubHandle}
+            link={this.state.link}
+            avatar={this.state.avatar}
+            followersCount={this.state.followersCount} />
         }
-        <Account
-          githubHandle={this.state.githubHandle}
-          link={this.state.link}
-          avatar={this.state.avatar}
-          followersCount={this.state.followersCount}
-          noUser={this.state.noUser}/>
         { followersExist ?
           (<FollowersContainer githubHandle={this.state.githubHandle} />) :
           null }
