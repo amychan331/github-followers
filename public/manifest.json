@@ -1,0 +1,8 @@
+{
+  "short_name": "Github Followers",
+  "name": "Github Followers",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

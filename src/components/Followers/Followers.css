@@ -1,0 +1,57 @@
+#followers {
+  border: 1px solid #939598;
+  display: block;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  text-overflow: ellipsis;
+  width: 95%;
+}
+
+li {
+  display: inline-block;
+  float: left;
+  height: 55px;
+  margin: 2% auto;
+  width: 33%;
+  min-width: 200px;
+  max-width: 600px;
+  overflow-wrap: break-word;
+  padding: auto;
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+li img {
+  border-radius: 50%;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
+
+li span{
+  display: inline-block;
+  margin-left: 5%;
+  position: absolute;
+  top: 25%;
+}
+
+.follower a:link, .follower a:visited {
+  color:#939598;
+  text-decoration: none;
+}
+
+.follower a:hover, .follower a:active {
+  color:#5a595e;
+  text-decoration: underline;
+}
+
+button[type=button] {
+  margin-bottom: 2%;
+}

@@ -1,0 +1,8 @@
+label {
+    color: #939598;
+}
+
+input[name=githubHandle] {
+    margin: 2%;
+    width: 60%;
+}
