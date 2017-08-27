@@ -24,5 +24,7 @@ Code listed in resume: <br />
 ## Installation
 ```
 git clone git@github.com:amychan331/github-followers.git
+cd github-followers
+npm install
 npm start
 ```
