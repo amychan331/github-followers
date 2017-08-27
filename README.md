@@ -1,4 +1,4 @@
-# Github Followers # [Hosted at Heroku](https://github-followers-amy.herokuapp.com/)
+# Github Followers# [Hosted at Heroku](https://github-followers-amy.herokuapp.com/)
 How do I use Github's API to build a quality web app that provided a easy to view followers data of a searched account in 5 days? That is the question encountered when I got Shipt's challenge to build a platform that search a Github name and output the account's follower image, with a "Load More" buttom will appear if user would like to see more.
 
 ## Technical
