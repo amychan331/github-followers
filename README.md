@@ -1,32 +1,23 @@
 # Github Followers
+[Hosted at Heroku](https://github-followers-amy.herokuapp.com/)
 
 ## Description
-A React web app that allows user to search using a Github handle name. THe search returns the account's phone and followers count, along if a list of the account's followers. If the account have many followers for initial search, an "Load More" will appear if user would like to see more.
+How do I use Github's API to build a quality web app that provided a easy to view followers data of a searched account in 5 days? That is the question encountered when I got Shipt's challenge to build a platform that search a Github name and output the account's follower image, with a "Load More" buttom will appear if user would like to see more.
 
-<!-- README
-Description of the problem and solution.
-Reasoning behind your technical choices, including architectural trade-offs you might have made, anything you left out, or what you might do differently if you were to spend additional time on the project.
-Link to other code you're particularly proud of.
-Link to your resume or public profile.
-Link to the hosted application.
-Therefore, feel free to mention in your README how much experience you have with the technical choices you make, we will take note of that when reviewing your challenge. (React is older, but never jest before - part of the reason to use React is because it comes with testing, so there is no setup.)
-please detail in your README which code was written by you (as opposed to generated code).
--->
+## Technical
+Main library chosen was React installed with create-react-app. Most of the code that I created are in './src'. React was chosen because the app's UI is generated from external API, so it will be generated views dynamically from user interaction, often resulting in numerouse image loading. As a UI library known for efficient update due to its virtual DOM feature, React is particularly suited for those purposes.
 
+In addition, I wanted its build-in testing feature, since I only recently learned Mocha and have not yet implemented it in a project. Here, I went with build-in Jest to reduce configuration time. I also installed enzyme and sino, though sino was later remove because I ran out of time. Sino is definitely something I hope to touch on if there is more time.
 
+To ensure responsiveness, I went with mobile-first methology where I started with the smallest  screen. Image loading speed is another concern. Examining Github's thumbnails, I realize I can reduce resolution and size by query.
 
-<!-- ASSESSMENT
-Architecture: how clean is the separation and construction of the application?
-Clarity: does the README clearly and concisely explains the problem and solution? Are technical tradeoffs explained?
-Correctness: does the application do what was asked? If there is anything missing, does the README explain why it is missing?
-Code quality: is the code simple, easy to understand, and maintainable? Are there any code smells or other red flags? Does object-oriented code follows principles such as the single responsibility principle? Is the coding style consistent with the language's guidelines? Is it consistent throughout the codebase?
-Testing: how thorough are the automated tests? Will they be difficult to change if the requirements of the application were to change? Are there some unit and some integration tests? * We're not looking for full coverage (given time constraint) but just trying to get a feel for your testing skills.
-UX: is the web interface understandable and pleasing to use?
-Technical choices: do choices of libraries, architecture etc. seem appropriate for the chosen application?
- -->
+## Architecture
+Part of the reason I chose React was because it was component based, so it was easy to keep the code organize. I organize by function, placing files that display static codes in "components" and file that focus in content generation such as API calls in "containers".
 
- NOTES:
- Why names show?
- UX/UI
-
-## Technology
+## More
+[Profile](http://craftplustech.com)
+[Resume](https://drive.google.com/file/d/0B1KQv3Seffs9YUlmTVE1cEJyM0U/view?usp=sharing)
+Code listed in resume:
+* [Bubblewrap](https://github.com/amychan331/bubblewrap/public_html)
+* [NextBus Compare](https://github.com/amychan331/nextbus-compare)
+* [Safe Route](https://github.com/amychan331/safe-route/db/)
