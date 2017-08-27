@@ -1,6 +1,4 @@
-# Github Followers
-<small>[Hosted at Heroku](https://github-followers-amy.herokuapp.com/)</small>
-## Description
+# Github Followers # [Hosted at Heroku](https://github-followers-amy.herokuapp.com/)
 How do I use Github's API to build a quality web app that provided a easy to view followers data of a searched account in 5 days? That is the question encountered when I got Shipt's challenge to build a platform that search a Github name and output the account's follower image, with a "Load More" buttom will appear if user would like to see more.
 
 ## Technical
@@ -12,6 +10,11 @@ To ensure responsiveness, I went with mobile-first methology where I started wit
 
 ## Architecture
 Part of the reason I chose React was because it was component based, so it was easy to keep the code organize. I organize by function, placing files that display static codes in "components" and file that focus in content generation such as API calls in "containers".
+
+## To-Do / Lesson for Future
+* Incorporate more testing in the future, and start it earlier. If there is more time, I wand to add testing for when there is more user interaction.
+* Better error handling: when the input box is empty after a search is done, the error message replace the account data temporarily.
+
 
 ## More
 [Profile](http://craftplustech.com) <br />

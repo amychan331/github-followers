@@ -32,9 +32,9 @@ input[type=submit], button[type=button] {
 
 input[type=submit]:focus, button[type=button]:focus,
 input[type=submit]:hover, button[type=button]:hover,
-input[type=submit]:active, button[type=button]:active,{
-    background-color: #71B045;
-    border: 1px solid #71B045;
+input[type=submit]:active, button[type=button]:active {
+    background-color: #5e933a;
+    border: 1px solid #5e933a;
 }
 
 .error {

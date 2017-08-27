@@ -60,7 +60,7 @@ class FormContainer extends Component {
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit} />
         { this.state.error ?
-          (<div className="error">{this.state.error}</div>) :
+          <div className="error">{this.state.error}</div> :
           <Account
             githubHandle={this.state.githubHandle}
             link={this.state.link}
