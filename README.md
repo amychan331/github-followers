@@ -16,13 +16,13 @@ To ensure responsiveness, I went with mobile-first methology where I started wit
 
 
 ## More
-[Sample site on Heroku](https://github-followers-amy.herokuapp.com/)
+[Sample site on Heroku](https://github-followers-amy.herokuapp.com/) <br />
 [Profile](http://craftplustech.com) <br />
 [Resume](https://drive.google.com/file/d/0B1KQv3Seffs9YUlmTVE1cEJyM0U/view?usp=sharing) <br />
 Code listed in resume: <br />
-* [Bubblewrap](https://github.com/amychan331/bubblewrap/public_html)
+* [Bubblewrap](https://github.com/amychan331/bubblewrap/tree/master/public_html)
 * [NextBus Compare](https://github.com/amychan331/nextbus-compare)
-* [Safe Route](https://github.com/amychan331/safe-route/db/)
+* [Safe Route](https://github.com/amychan331/safe-route/tree/master/db)
 
 ## Installation
 ```
